@@ -1,0 +1,113 @@
+body {
+    font-family: 'Bacasime Antique', serif;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, rgba(66, 21, 121, 1) 0%, rgba(121, 21, 91, 1) 69%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todolist {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #C23373;
+    filter: drop-shadow(0 0px 15px rgba(0, 0, 0, 0.664));
+    max-width: 581px;
+}
+
+header h1 {
+    padding-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    filter: drop-shadow(0 0px 5px black);
+}
+
+.input-container {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    border: none;
+    background-color: #FFBA86;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    filter: drop-shadow(0 0px 4px rgba(255, 186, 134, 0.8));
+    transition: all .5s ease;
+}
+
+::placeholder {
+    color: #333333;
+    opacity: 1;
+    font-family: 'Bacasime Antique', serif;
+    font-family: 'Poppins', sans-serif;
+  }
+
+input:focus {
+    outline: none;
+}
+
+.placeholder {
+    display: none;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 550px;
+    color: black;
+}
+
+.tasklook {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #EADBC8;
+    border-radius: 15px;
+}
+
+.task-content {
+    flex-grow: 1;
+    padding-right: 10px;
+    color: #333333;
+}
+
+.delete-button{
+margin-left: 10px;
+right: 1%;
+}
+
+.edit-button,
+.delete-button ,
+.saved-button {
+    border: none;
+    background-color: #FFBA86;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #333333;
+    font-family: 'Bacasime Antique', serif;
+    font-family: 'Poppins', sans-serif;
+    filter: drop-shadow(0 0px 4px rgba(255, 186, 134, 0.8));
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.edit-button:hover,
+.delete-button:hover,
+.saved-button:hover,
+input:hover {
+    transform: scale(1.1);
+}
+
+
